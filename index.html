@@ -2,18 +2,39 @@
 <html lang="en">
 
 <head>
+		<!-- cdn -->
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+		  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="author" content="YourName">
 	<meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
 	<title>Robert Walton UI Portfolio</title>
+		<!-- custom font -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
+	<style>
+
+
+
+
+		</style>
 </head>
 
 <body>
+
+
 	<!-- For the header -->
 	<header>
 		<!-- For the navigation -->
 		<div>
-			<img src="img/logo.png" alt="Your Name">
+			<img src="img/logo.svg" alt="Logo">
+
 			<nav>
 				<ul>
 					<li><a href="index.html">Work</a></li>
@@ -26,7 +47,7 @@
 	<main>
 
 		<!-- For the hero section -->
-		<div>
+		<div id=hero>
 			<!--section/orange -->
 			<div>
 				<!-- Container/yellow -->
@@ -38,11 +59,11 @@
 				<p> I’m Robert, a UI/UX designer with a background in fine arts and teaching. I love to use my creativity and research to make optimal experiences for users.
 				</p>
 			</div>
-		</div>
+		</div id=hero>
 
 
 		<!-- For your work/projects -->
-		<div>
+		<div id=work>
 			<!-- section/orange -->
 			<div>
 				<!-- container/yellow -->
@@ -52,8 +73,8 @@
 					<div>
 						<!-- column/teal -->
 						<picture>
-							<source srcset="img/garagegym/garagegymwhite@2x.png" media="(max-width : 600px)">
-							<img src="img/garagegym/garagegymwhite@2x.png" alt="Garage Gym Mobile">
+							<source srcset="img/garagegym/garagegymglow@1x.png" media="(max-width : 600px)">
+							<img src="img/garagegym/garagegymglow@2x.png" alt="Garage Gym Mobile">
 						</picture>
 					</div>
 					<div>
@@ -72,8 +93,8 @@
 					<div>
 						<!-- column/teal -->
 						<picture>
-							<source srcset="img/ride/ridewhite@1x.png" media="(max-width : 600px)">
-							<img src="img/ride/ridewhite@2x.png" alt="Ride App">
+							<source srcset="img/ride/ridedark@1x.png" media="(max-width : 600px)">
+							<img src="img/ride/ridedark@2x.png" alt="Ride App">
 						</picture>
 					</div>
 					<div>
@@ -88,7 +109,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div id=work>
 
 	</main>
 
@@ -101,7 +122,8 @@
 			<h2> Let's Create. </h2>
 			<p>
 				Contact me at <a href="tel:+19316267232">+1 9316267232</a> </p>
-			<div> <a href="waltonrobert124@gmail.com">Email me</a>
+			<div> <a href="#" class="button">Read more</a>
+				<a href="waltonrobert124@gmail.com" class="button contact">Email me</a>
 			</div>
 			<div>
 				<!-- behance--><a href="https://www.behance.net/robertwalton3" target="_blank">
@@ -136,5 +158,5 @@
 			<p>Copyright Robert Walton 2021</p>
 
 		</div>
-	</footer>
+	</footer id=contact>
 </body>
