@@ -20,17 +20,22 @@ body {
 }
 
 header {
-  background-color: #ff44c4;
-  text-align: center;
+  background-color: #121212;
+  text-align: unset;
   padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
 }
-.logo {text-align: left;
-}
-.logo svg {width: 50px;
-height: auto;}
 
+.logo {
+  text-align: left;
+  display: inline-block;
+}
+
+.logo svg {
+  width: 250px;
+  height: auto;
+}
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -73,11 +78,6 @@ a:focus {
   /* Underlining when hovering over a link */
 }
 
-a:visited {
-  /* visited link */
-  color: #7D6E6E;
-}
-
 a:active {
   /* selected link */
   color: #E1C7C7;
@@ -113,7 +113,7 @@ img {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ffffff;
-  color: #ffffff;
+  color: #121212;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -122,47 +122,64 @@ img {
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
+
 #hero h1 {
   margin: 0;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
+
 footer {
   text-align: center;
 }
+
 .logo {
-  max-width: 250px;
+  max-width: 50px;
 }
-.social {text-align: center;
+
+.social {
+  text-align: center;
 }
+
 .social a {
   display: inline-block;
   margin: 0 20px;
 }
-.social svg {width: 50px;
-height: auto;}
-nav > ul {
+
+.social svg {
+  width: 50px;
+  height: auto;
+}
+
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
-nav > ul > li > a:visited {
+
+nav>ul>li>a:visited {
   display: inline-block;
 }
-nav > ul > li > a {
+
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
+
 #hero {
-  background-color: #ff44c4;
+  background-color: #121212;
 }
