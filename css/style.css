@@ -22,9 +22,9 @@ body {
 header {
   background-color: #121212;
   text-align: unset;
-  padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
+  padding: 10px 0 4px;
 }
 
 .logo {
@@ -134,7 +134,9 @@ img {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
 }
-
+main {
+  padding-top: 56px;
+}
 #hero h1 {
   margin: 0;
   padding: 20px 0;
@@ -174,11 +176,54 @@ nav>ul {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
+  margin: 0;
 }
 
 nav>ul>li {
+  margin: 1em 0;
+min-width: 641px;
+display: inline-block;{}
+ .navtoggle li:not(:last-child) {
   display: inline-block;
 }
+.navtoggle li:last-child {
+  display: none;
+}
+}
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(153,153,153,100);
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
 
 nav>ul>li>a:visited {
   display: inline-block;

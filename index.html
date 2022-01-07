@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+
 	<!-- cdn -->
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- fontawesome -->
+	<script src="https://kit.fontawesome.com/a8fa54de51.js" crossorigin="anonymous"></script>
 
 
 	<!-- viewport -->
@@ -15,6 +18,7 @@
 	<meta name="author" content="YourName">
 	<meta name="description" content="Short description including keywords related to the pages content for SEO purposes">
 	<title>Robert Walton UI Portfolio</title>
+
 	<!-- custom font -->
 
 	<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap" rel="stylesheet">
@@ -31,15 +35,23 @@
 
 	<!-- For the header -->
 	<header>
+
+
+
 		<!-- For the navigation -->
 		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
 			<img class="logo" src="img/logo.svg" alt="Logo">
+
+
 
 			<nav>
 				<ul class="navigation">
 					<li><a href="index.html">Work</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+
 				</ul>
 			</nav>
 		</div>
@@ -1444,5 +1456,6 @@
 
 		</div>
 	</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
 </body>
