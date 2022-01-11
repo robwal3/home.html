@@ -73,7 +73,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #999999;
+  color: #ffffff;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
