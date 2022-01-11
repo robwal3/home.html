@@ -134,9 +134,11 @@ img {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
 }
+
 main {
   padding-top: 56px;
 }
+
 #hero h1 {
   margin: 0;
   padding: 20px 0;
@@ -181,16 +183,8 @@ nav>ul {
 
 nav>ul>li {
   margin: 1em 0;
-min-width: 641px;{
-display: inline-block;}
- .navtoggle li:not(:last-child) {
   display: inline-block;
 }
-.navtoggle li:last-child {
-  display: none;
-}
-}
-
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -207,23 +201,16 @@ display: inline-block;}
   font-size: 20px;
   padding-right: 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(153,153,153,100);
+  border-top: 1px solid rgba(153, 153, 153, 100);
 }
-.navtoggle.responsive li:last-child  {
+
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
-
-
-
-
-
-
-
-
 
 nav>ul>li>a:visited {
   display: inline-block;
@@ -259,44 +246,61 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  [class*="col-"] {
+    float: left;
+  }
 
-[class*="col-"] {
-  float: left;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .logo {
+    float: left;
+    padding-top: 5px;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav>ul>li {
+    margin:  0;
+  }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .navtoggle::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 60%;
+  }
 
-.col-lg-7 {
-  width: 60%;
-}
-
-.col-lg-5 {
-  width: 40%;
-}
+  .col-lg-5 {
+    width: 40%;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
-
-
 
 @keyframes color-change {
   from {
